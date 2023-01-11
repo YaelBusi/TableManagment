@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/table.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="../js/table.js"></script>
+    <script src="../js/editColor.js"></script>
+ </head>
+<body>
+    
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Descreption</th>
+                <th>Price</th>
+                <th>Color</th>
+                <th>Order</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody id="bobyTable">
+            <tr id="tmpTr">
+                <td class="desc"></td>
+                <td class="price"></td>
+                <td class="color"></td>
+                <td class="order"></td>
+                <td class="operations">
+                    <button class="btn deleteBtn"><i class="fa fa-trash"></i>   Delete</button>
+                    <button class="btn editBtn"><i class="fa fa-edit"></i>  Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer">
+        <button class="btn addBtn" id="add">Add Color</button>
+        <div>Total <count id="count"></count> colors in table </div>
+    </div>
+</body>
+</html>
